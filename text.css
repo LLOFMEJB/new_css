@@ -1,0 +1,26 @@
+#par1{
+    color: royalblue;
+    text-align: justify;
+    text-decoration: wavy;
+    text-transform: capitalize;
+}
+#par2{
+    color: forestgreen;
+    text-align: left;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+#par3{
+    color: tomato;
+    text-align: right;
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+#par4{
+    color: orchid;
+    text-align: justify;
+}
+#par5{
+    color: slategrey;
+    text-align: justify;  
+}
