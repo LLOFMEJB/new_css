@@ -1,0 +1,15 @@
+div p {
+    color: purple;
+}
+
+.container div p {
+    color: blue;
+}
+
+p + div {
+color: chartreuse;
+}
+
+div + p {
+    color: teal;
+}
