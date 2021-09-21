@@ -1,0 +1,12 @@
+ h2[title="baslik1"]{
+     color: steelblue;
+ }
+ p[title="par1"]{
+     color: slateblue;
+ }
+ a[target="_blank"]{
+     color: salmon;
+ }
+.par2::first-letter{
+    color: seagreen;
+}
