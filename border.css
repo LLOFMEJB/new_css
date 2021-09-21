@@ -1,12 +1,15 @@
 .div1{
-border: 5px solid black;
+border: 5px solid rgb(0, 0, 0);
 }
 #par1{
     border: 3px dotted gray;
+    color: burlywood;
+    text-align: center;
 }
 #par2{
     border: 5px groove blue;
     padding: 3px 5px 7px 9px;
+    text-align: right;
 }
 #par3{
     border: 7px dotted blueviolet;
@@ -16,4 +19,16 @@ border: 5px solid black;
 }
 #par5{
     border: 11px dotted yellowgreen;
+    text-transform: capitalize;
+    text-transform: uppercase;
 }
+a:hover{
+    color: black;
+    font-style: italic;
+}
+a:visited{
+    color: brown;
+}
+a:active{
+    color: chartreuse;
+} 
