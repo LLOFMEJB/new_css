@@ -1,26 +1,7 @@
-.div {
-  border: 3px solid rgb(0, 0, 0);
-  margin: 5px;
-  /* position: relative; */
-}
-
-#div1 {
-  margin: 100px 15px;
-  border: 1px solid teal;
+#div {border: 5px solid black;
   background-color: teal;
-  top: 25px;
+  display: inline;
 }
-#div2 {
-  border: 1px solid tomato;
-  margin: 100px 15px;
-  background-color: tomato;
-  position: sticky;
-}
-#div3 {
-  border: 1px solid slateblue;
-  margin: 100px 15px;
-  background-color: slateblue;
-  position: absolute;
-  left: 25px;
-  top: 25px ;
+#img {
+  float: left;
 }
