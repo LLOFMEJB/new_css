@@ -21,6 +21,7 @@ border: 5px solid rgb(0, 0, 0);
     border: 11px dotted yellowgreen;
     text-transform: capitalize;
     text-transform: uppercase;
+    display: none;
 }
 a:hover{
     color: black;
