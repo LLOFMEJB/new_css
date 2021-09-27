@@ -8,14 +8,17 @@
     width: 90vw;
     overflow: hidden;
 } */
-.box{
+/* .box{
     margin: 0%;
-    /* width: 100vmax;
-    height: 100vmin; */
+    width: 100vmax;
+    height: 100vmin;
     overflow: hidden;
     background-color: teal;
     max-width: 600px;
     max-height: 600px;
     min-height: 400px;
     min-width: 400px;
+} */
+div+p{
+    background-color: aquamarine;
 }
