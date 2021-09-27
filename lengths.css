@@ -19,6 +19,6 @@
     min-height: 400px;
     min-width: 400px;
 } */
-div+p{
+    div~p{
     background-color: aquamarine;
 }
