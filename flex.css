@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+.flex-container{
+    border: 6px solid green;
+    display: flex;
+    flex-direction: ;
+
+}
+
+.items{
+    background-color: steelblue;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    width: 100px;
+}
