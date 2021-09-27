@@ -5,7 +5,13 @@
 .flex-container{
     border: 6px solid green;
     display: flex;
-    flex-direction: ;
+    height: 400px;
+    /* flex-direction: row;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: baseline; */
+    /* flex-wrap: wrap; */
+    align-content: flex-end;
 
 }
 
@@ -14,7 +20,36 @@
     color: white;
     font-size: 30px;
     padding: 10px;
-    margin: 3px;
+    margin: 5px;
     text-align: center;
-    width: 100px;
+    width: 80px;
+}
+.item1{
+  font-size: 55px;
+  order: ;
+}
+.item2{
+  order: ;
+  flex-shrink: 4;
+}
+.item3{
+  font-size: 45px;
+  order: ;
+  flex-basis: 50%;
+}
+.item4{
+  order: ;
+  flex-basis: 0;
+}
+.item5{
+  order:5 ;
+}
+.item6{
+  order: ;
+}
+.item7{
+  order:1 ;
+}
+.item8{
+  order:-1 ;
 }
