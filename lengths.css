@@ -10,8 +10,12 @@
 } */
 .box{
     margin: 0%;
-    border: 5px solid black;
-    height: 30vmax;
-    width: 30vmin;
+    /* width: 100vmax;
+    height: 100vmin; */
     overflow: hidden;
+    background-color: teal;
+    max-width: 600px;
+    max-height: 600px;
+    min-height: 400px;
+    min-width: 400px;
 }
