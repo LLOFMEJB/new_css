@@ -1,16 +1,21 @@
 #container{
     display: grid;
-    grid-template-columns: 200px 500px 200px 100px;
-    grid-template-rows: 100px 400px;
+    grid-template-columns: 20% 40% 20% 20%;
+    grid-template-rows: 40% 100% 25%;
+    grid-gap: 5px;
 }
 .content{
     background-color: rgb(84, 132, 236);
     border: 1px solid rgb(216, 195, 195);
 }
+.content1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
 #elturco{
-    height:100px;
-    margin-left: 10px;
+    height:95px;
 }
 .content2{
-    font-size: 55 px;
+    font-size: 55px;
 }
