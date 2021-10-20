@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$primaryColor: grey;
+$color: navy;
+$widthButton: 100px;
+$nameColor: (
+  "light": white,
+  "dark": black,
+);
+
+nav {
+  background-color: $primaryColor;
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+.left {
+  list-style: none;
+  float: left;
+  li {
+    display: inline-block;
+    margin: 20px;
+  }
+  li:first-child {
+    margin: 5px;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color;
+    display: inline-block;
+    padding: 10px;
+  }
+}
+.right {
+  float: right;
+}
+
+.hg,
+.rw {
+  padding: 10px;
+  display: inline-block;
+  width: $widthButton;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+.hg {
+  &:link {
+    background-color: blueviolet;
+  }
+  &:hover {
+    background-color: darken($color: $primaryColor, $amount: 10);
+  }
+}
+
+.rw {
+  &:link {
+    background-color: blueviolet;
+  }
+  &:hover {
+    background-color: darken($color: $primaryColor, $amount: 10);
+  }
+}
+
+.nm {
+  padding: 5px;
+  border: 1px solid black;
+  background-color: map-get($nameColor, "light");
+}
+
+div {
+  float: left;
+}
+
+@mixin container ($color1:black, $height:300px) {
+  width: 100px;
+  height:$height;
+  background-color:$color1;
+  margin: 15px;
+}
+
+#first{
+  @include container(red, 120px);
+}
+#second{
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  margin: 15px;
+}
+#third{
+  @include container(grey, 200px)
+}
+
+.box{
+  width: 30px;
+  height: 30px;
+  background-color: hotpink;
+  margin: 15px;
+  border-radius: 50%;
+  text-align: center
+}
+
+#a1,#b2,#c3{
+  @extend .box;
+}
+
+@mixin stil($bina){
+  @if ($bina == "hg") {
+    background-color: firebrick;
+  }
+  @else if ($bina == "sl") {
+    background-color:green
+  }
+  @else if ($bina == "rw") {
+    background-color:dodgerblue ;
+  }
+  @else {
+    background-color: black;
+  }
+}
+
+.kutu{
+  float: left;
+  padding: 10px 15px;
+  @include stil("hg")
+}
+
+$boyutlar: 1,2,3,4;
+
+@each $boyut in $boyutlar {
+  .kutu#{$boyut}{
+    width: 50px;
+    background-color: forestgreen;
+    height: 50+$boyut*10 +px;
+  }
+}
+
+$balonlar: (küçük:5, orta:10, büyük:15);
+@each $ebat, $fiyat in $balonlar {
+  .balon-#{$ebat}{
+    background-color: lightseagreen;
+    border-radius: 50%;
+height: $fiyat*10 +px;
+width: $fiyat*10 +px;
+text-align:center;
+  }
+}
+

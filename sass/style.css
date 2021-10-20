@@ -1,0 +1,162 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: grey;
+}
+
+nav::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.left {
+  list-style: none;
+  float: left;
+}
+
+.left li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.left li:first-child {
+  margin: 5px;
+}
+
+.left a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: navy;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right {
+  float: right;
+}
+
+.hg,
+.rw {
+  padding: 10px;
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: navy;
+}
+
+.hg:link {
+  background-color: blueviolet;
+}
+
+.hg:hover {
+  background-color: #676767;
+}
+
+.rw:link {
+  background-color: blueviolet;
+}
+
+.rw:hover {
+  background-color: #676767;
+}
+
+.nm {
+  padding: 5px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+div {
+  float: left;
+}
+
+#first {
+  width: 100px;
+  height: 120px;
+  background-color: red;
+  margin: 15px;
+}
+
+#second {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  margin: 15px;
+}
+
+#third {
+  width: 100px;
+  height: 200px;
+  background-color: grey;
+  margin: 15px;
+}
+
+.box, #a1, #b2, #c3 {
+  width: 30px;
+  height: 30px;
+  background-color: hotpink;
+  margin: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.kutu {
+  float: left;
+  padding: 10px 15px;
+  background-color: firebrick;
+}
+
+.kutu1 {
+  width: 50px;
+  background-color: forestgreen;
+  height: 60px;
+}
+
+.kutu2 {
+  width: 50px;
+  background-color: forestgreen;
+  height: 70px;
+}
+
+.kutu3 {
+  width: 50px;
+  background-color: forestgreen;
+  height: 80px;
+}
+
+.kutu4 {
+  width: 50px;
+  background-color: forestgreen;
+  height: 90px;
+}
+
+.balon-küçük {
+  background-color: lightseagreen;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.balon-orta {
+  background-color: lightseagreen;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.balon-büyük {
+  background-color: lightseagreen;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
