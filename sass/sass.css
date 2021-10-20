@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=sass.css.map */
+.container {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: greenyellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container2 {
+  width: 300px;
+  height: 100px;
+  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 3px solid black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  border: 10px solid red;
+}
+
+.item-1 {
+  width: 100px;
+  height: 15px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+
+.item-2 {
+  width: 200px;
+  height: 15px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+
+.item-3 {
+  width: 300px;
+  height: 15px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+
+.item-4 {
+  width: 400px;
+  height: 15px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+
+.item-5 {
+  width: 500px;
+  height: 15px;
+  background-color: darkgoldenrod;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=sass.css.map */

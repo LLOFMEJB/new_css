@@ -1,0 +1,71 @@
+@mixin icon($boyut, $yuvarlak: false) {
+    width: $boyut;
+    height: $boyut;
+    @if ($yuvarlak) {
+        border-radius: $boyut / 2;
+    }
+}
+
+.container{
+    float: left;
+    @include icon(40px, true);
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin kenarlik($yon, $tur, $renk) {
+    @if ($yon == "l") {
+        border-left:3px $tur $renk;
+    }
+    @else if ($yon == "r") {
+        border-right:3px $tur $renk;
+    }
+    @else if ($yon == "t") {
+        border-top:3px $tur $renk;
+    }
+    @else if ($yon == "b") {
+        border-bottom:3px $tur $renk;
+    }
+    @else {
+        border: 3px solid black;
+    }
+}
+
+.container2{
+    width: 300px;
+    height: 100px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include kenarlik(t,solid ,black )
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px solid red;
+}
+
+@for $i from 1 through 5 {
+    .item-#{$i} {
+        width: 100px*$i;
+        height: 15px;
+        background-color: darkgoldenrod;
+        margin-bottom: 10px;
+    }
+}
