@@ -61,11 +61,26 @@ body{
     border: 10px solid red;
 }
 
+$color11: rgb(197, 11, 11);
+$color12: rgb(197, 119, 41);
+$color13: rgb(61, 11, 197);
+$color14: rgb(170, 67, 150);
+$color15: rgb(52, 136, 44);
+$colors:$color11,$color12,$color13,$color14,$color15;
+
 @for $i from 1 through 5 {
     .item-#{$i} {
         width: 100px*$i;
-        height: 15px;
-        background-color: darkgoldenrod;
+        
+        background-color: nth($colors, $i );
         margin-bottom: 10px;
+    }
+}
+$dizi:1,2,3,4,5;
+$dizi2:1,2,3,2,1;
+@each $i in $dizi {
+    .item-#{$i}{
+        font-size:10px *nth($dizi2, $i ) ;
+        height:15px *nth($dizi2, $i );
     }
 }

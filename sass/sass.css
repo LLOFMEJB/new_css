@@ -60,36 +60,56 @@ body {
 
 .item-1 {
   width: 100px;
-  height: 15px;
-  background-color: darkgoldenrod;
+  background-color: #c50b0b;
   margin-bottom: 10px;
 }
 
 .item-2 {
   width: 200px;
-  height: 15px;
-  background-color: darkgoldenrod;
+  background-color: #c57729;
   margin-bottom: 10px;
 }
 
 .item-3 {
   width: 300px;
-  height: 15px;
-  background-color: darkgoldenrod;
+  background-color: #3d0bc5;
   margin-bottom: 10px;
 }
 
 .item-4 {
   width: 400px;
-  height: 15px;
-  background-color: darkgoldenrod;
+  background-color: #aa4396;
   margin-bottom: 10px;
 }
 
 .item-5 {
   width: 500px;
-  height: 15px;
-  background-color: darkgoldenrod;
+  background-color: #34882c;
   margin-bottom: 10px;
+}
+
+.item-1 {
+  font-size: 10px;
+  height: 15px;
+}
+
+.item-2 {
+  font-size: 20px;
+  height: 30px;
+}
+
+.item-3 {
+  font-size: 30px;
+  height: 45px;
+}
+
+.item-4 {
+  font-size: 20px;
+  height: 30px;
+}
+
+.item-5 {
+  font-size: 10px;
+  height: 15px;
 }
 /*# sourceMappingURL=sass.css.map */
