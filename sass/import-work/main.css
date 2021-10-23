@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.button, .button-error, .button-success, .button-warning {
+  float: left;
+  padding: 0px;
+  margin: 5px;
+  color: #d36f6f;
+}
+
+.button-error {
+  background-color: #aa1919;
+}
+
+.button-success {
+  background-color: green;
+}
+
+.button-warning {
+  background-color: orangered;
+}
+
+footer {
+  float: left;
+  background-color: #00ff2a;
+}
+
+#contact {
+  float: left;
+  background-color: red;
+}
+
+#dark {
+  float: left;
+  background-color: #554b4b;
+}
+
+#light {
+  float: left;
+  background-color: #554b4b;
+}
+/*# sourceMappingURL=main.css.map */
