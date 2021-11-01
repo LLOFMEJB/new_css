@@ -215,30 +215,179 @@
     <hr><br>
     <h5>Checkbox</h5>
     <div class="form-check form-check-inline form-switch">
-        <input id="dgm" name="x" type="checkbox" class="form-check-input mx-1" />
-        <label for="x" class="form-label">10-30</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input type="checkbox" class="form-check-input mx-1">
-        <label for="" class="form-label">10-30</label>
-    </div>
-
-    <div class="form-check form-check-inline form-switch">
-        <input class="form-check-input" type="check-box" name="secim1" id="checkbox">
-        <label class="form-label" for="">seçim 1</label>
+        <input class="form-check-input" type="checkbox" name="secim1" id="checkbox">
+        <label class="form-check-label" for="checkbox">seçim 1</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="check-box" name="secim2" id="checkbox2">
-        <label class="form-label" for="">seçim 2</label>
+        <input class="form-check-input" type="checkbox" name="secim2" id="checkbox2">
+        <label class="form-check-label" for="checkbox2">seçim 2</label>
     </div>
-
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" name="secim2" id="checkbox3" disabled>
+        <label class="form-check-label" for="checkbox3">seçim 3</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <br>
+    <hr><br>
+    <h5>Radio</h5>
+    <div class="form-check form-control form-check-inline form-switch">
+        <input class="form-check-input" type="radio" name="secim" id="radio1">
+        <label class="form-check-label" for="radio1">seçim 1</label>
+    </div>
+    <div class="form-check form-control form-check-inline">
+        <input class="form-check-input" type="radio" name="secim" id="radio2">
+        <label class="form-check-label" for="radio2">seçim 2</label>
+    </div>
+    <div class="form-check form-control form-check-inline">
+        <input class="form-check-input" type="radio" name="secim" id="radio3" disabled>
+        <label class="form-check-label" for="radio3">seçim 2</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
     <br>
     <hr><br>
 
-    <div class="container">
-        <label class="form-label" for="checkbox2">Checkbox</label>
-        <input class="form-check-input" type="check-box" name="secim3" id="checkbox3">
+    <!-- input-group -->
+
+    <div class="input-group container">
+        <span class="input-group-text">İnput Group</span>
+        <input type="text" class="form-control">
+        <label class="input-group-text">@</label>
+        <input type="text" class="form-control" name="" id="">
     </div>
+
+
+    <br>
+    <hr><br>
+    <!-- alert -->
+
+    <div class="container alert alert-dismissable alert-warning fade show">
+        <h5 class="alert-heading">Uyarı</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia?</p>
+        <hr>
+        <button class="btn btn-dark" data-bs-dismiss="alert">
+            CLOSE
+        </button>
+        <button class="float-end btn-close btn-dark" data-bs-dismiss="alert">
+        </button>
+    </div>
+    <br>
+    <hr><br>
+
+    <!-- CARDS -->
+    <div class="card-group container">
+        <div class="card shadow-lg">
+            <img class="card-img-top" src="./kuran.jpg" alt="">
+            <h6 class="card-header">CARD HEADER</h6>
+            <div class="card-body card-img-overlay"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem repudiandae inventore earum, sed deserunt!</p></div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-success">INFO</button>
+            </div>
+        </div>
+        <div class="card shadow-lg">
+            <img class="card-img-top" src="./kuran.jpg" alt="">
+            <h6 class="card-header">CARD HEADER</h6>
+            <div class="card-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rem repudiandae inventore earum, sed deserunt!</p></div>
+            <div class="card-footer">
+                <button type="button" class="btn btn-success btn-outline-dark">INFO</button>
+            </div>
+        </div>
+    </div><br><hr><br>
+
+        <!-- DROPDOWN -->
+    <div class="container dropend">
+        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Menu 1</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="#" class="dropdown-item">Menu 2</a> </li>
+            <li><a href="#" class="dropdown-item">Menu 3</a> </li>
+        </ul>
+    </div>
+
+
+    <!-- NAVTABS -->
+<div class="container">
+    <ul class="nav">
+        <li class="nav-item"><a href="" class="nav-link">fener</a></li>
+        <li class="nav-item"><a href="" class="nav-link">bjk</a></li>
+        <li class="nav-item"><a href="" class="nav-link">gs</a></li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="">Hogwarts</a> </li>
+        <li class="nav-item"><a class="nav-link" href="">Maltepe</a> </li>
+        <li class="nav-item"><a class="nav-link" href="">Harbiye</a> </li>
+    </ul>
+    <br><br><br>
+    <nav class="nav">
+        <a class="nav-link" href="">1</a>
+        <a class="nav-link" href="">2</a>
+        <a class="nav-link" href="">3</a>
+    </nav>
+    <br><br><br>
+    <nav class="nav">
+        <a class="nav-link" href="https://www.fenerbahce.org">Hogwarts</a>
+        <a class="nav-link" href="">Maltepe</a>
+        <a class="nav-link" href="">Harbiye</a>
+    </nav>
+    <br><br><br>    
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active" href="">Hogwarts</a> </li>
+        <li class="nav-item"><a class="nav-link" href="">Maltepe</a> </li>
+        <li class="nav-item"><a class="nav-link" href="">Harbiye</a> </li>
+    </ul>
+    <br><br><br>    
+    <ul class="nav nav-pills nav-tabs nav-fill">
+        <li class="nav-item"><a data-bs-toggle="tab" class="nav-link active" href="#hw">Hogwarts</a> </li>
+        <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#ml">Maltepe</a> </li>
+        <li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#hr">Harbiye</a> </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane show fade active" id="hw">
+            <h6>Hogwarts</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas veniam ratione rem. Placeat, ducimus!</p>
+        </div>
+        <div class="tab-pane show fade" id="ml">
+            <h6>Maltepe</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas veniam ratione rem. Placeat, ducimus!</p>
+        </div>
+        <div class="tab-pane show fade" id="hr">
+            <h6>Harbiye</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas veniam ratione rem. Placeat, ducimus!</p>
+        </div>
+    </div>
+
+    <nav class="navbar bg-primary navbar-dark navbar-expand-sm justify-content-center ">
+        <ul class="navbar-nav flex-column">
+            <li class="navbar-item"><a href="https://www.fenerbahce.org" class="nav-link">Home <span class="spinner-border spinner-grow-sm text-warning"></span></a></li>
+            <li class="navbar-item"><a href="https://www.fenerbahce.org" class="nav-link">About <span class="spinner-grow spinner-grow-sm text-warning"></span></a></li>
+            <li class="navbar-item"><a href="https://www.fenerbahce.org" class="nav-link">Contact <span class="spinner-grow spinner-grow-sm text-warning"></span></a></li>
+        </ul>
+
+    </nav>
+    <span class="spinner-grow spinner-grow-sm text-warning"></span>
+
+
+
+
+
+
+
 
 
 
