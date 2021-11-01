@@ -47,7 +47,8 @@
                 </figure>
             </div>
         </div>
-    </div>
+    </div><br>
+    <hr><br>
     <!-- padding-margin-border-text center -->
     <div class="container">
         <div class="row">
@@ -61,7 +62,8 @@
                 <a href="https://www.fenerbahce.org">Fenerbahçe</a>
             </div>
         </div>
-    </div>
+    </div><br>
+    <hr><br>
     <!-- display-inline-inline block-block-none-invisible -->
     <div class="border border-dark container">
         <ul>
@@ -89,7 +91,8 @@
         <div class="bg-warning d-inline-block m-1 h-25"><a href="">1 d-inline</a></div>
         <div class="bg-warning d-inline-block m-1 h-50"><a href="">1 d-inline</a></div>
         <div class="bg-warning d-inline-block m-1 h-75"><a href="">1 d-inline</a></div>
-    </div>
+    </div><br>
+    <hr><br>
     <!-- clearfix -->
 
     <!-- container-fluid üste beindiği için sonraki container class .clearfix yazılır -->
@@ -123,6 +126,119 @@
             </tbody>
         </table>
     </div>
+    <!-- Lists -->
+    <div>
+        <ul>
+            <li>Fenerbahçe</li>
+            <li>Man. City</li>
+            <li>PSG</li>
+        </ul>
+    </div>
+    <!-- Lists -->
+    <div class="container">
+        <ul class="list-group list-group-flush rounded-pill hover w-100">
+            <li class="list-group-item active list-group-item-action">Fenerbahçe</li>
+            <li class="list-group-item list-group-item-action">Man. City</li>
+            <li class="list-group-item list-group-item-action">PSG</li>
+            <li class="list-group-item list-group-item-action disabled">Galata</li>
+        </ul>
+    </div><br>
+    <hr><br>
+
+    <div class="container bg-warning">
+        <ul class="list-inline">
+            <li class="list-inline-item">This is a list item.</li>
+            <li class="list-inline-item">And another one.</li>
+            <li class="list-inline-item">But they're displayed inline.</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container bg-success rounded">
+        <dl class="row">
+            <dt class="col-sm-3">Description lists</dt>
+            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+            <dt class="col-sm-3">Term</dt>
+            <dd class="col-sm-9">
+                <p>Definition for the term.</p>
+                <p>And some more placeholder definition text.</p>
+            </dd>
+        </dl>
+    </div>
+    <br>
+    <hr><br>
+
+
+    <div class="container-fluid m-1 p-3">
+        <label class="form-label inline-block" for="isim">isim</label>
+        <input class="form-control inline-block" type="text" name="ad" id="isim">
+    </div>
+    <div class="container m-1 p-3">
+        <label class="form-label inline-block" for="sifre">Şifre</label>
+        <input class="form-control inline-block" type="password" name="ad" id="sifre">
+    </div>
+    <div class="container">
+        <label class="form-label" for="comment">Yorumlarınız</label>
+        <textarea placeholder="Yorumlarınızı paylaşınız..." class="form-control" name="yorum" id="comment" cols="30"
+            rows="5"></textarea>
+    </div>
+    <br>
+    <hr><br>
+    <div class="container">
+        <label class="form-label" for="eklemeli">Eklemeli Seçim</label>
+        <input class="form-control" id="eklemeli" name="ülke" type="text" list="countries">
+        <datalist id="countries">
+            <option value="usa">usa</option>
+            <option value="canada">canada</option>
+            <option value="britain">britain</option>
+        </datalist>
+    </div><br>
+    <hr><br>
+    <div class="container">
+        <label class="form-label" for="eklemesiz">Eklemesiz Select</label>
+        <select name="ülke" id="eklemesiz" class="form-select">
+            <optgroup>
+                <option value="usa">usa</option>
+                <option value="can">can</option>
+                <option value="ita" disabled>ita</option>
+                <option value="gbr">gbr</option>
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <hr><br>
+    <div class="container">
+        <label class="form-label" for="photos">Fotoğraf yükleyiniz</label>
+        <input class="form-control" type="file" multiple>
+    </div>
+    <br>
+    <hr><br>
+    <h5>Checkbox</h5>
+    <div class="form-check form-check-inline form-switch">
+        <input id="dgm" name="x" type="checkbox" class="form-check-input mx-1" />
+        <label for="x" class="form-label">10-30</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input mx-1">
+        <label for="" class="form-label">10-30</label>
+    </div>
+
+    <div class="form-check form-check-inline form-switch">
+        <input class="form-check-input" type="check-box" name="secim1" id="checkbox">
+        <label class="form-label" for="">seçim 1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="check-box" name="secim2" id="checkbox2">
+        <label class="form-label" for="">seçim 2</label>
+    </div>
+
+    <br>
+    <hr><br>
+
+    <div class="container">
+        <label class="form-label" for="checkbox2">Checkbox</label>
+        <input class="form-check-input" type="check-box" name="secim3" id="checkbox3">
+    </div>
 
 
 
@@ -141,7 +257,15 @@
 
 
 
-
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
