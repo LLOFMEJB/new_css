@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <title>Form Example</title>
+    <style>  html{scroll-behavior: smooth;}  </style>
 </head>
 
 <body>
@@ -364,12 +365,12 @@
         </div>
     </div><br>
     <hr><br>
-    
+
     <!-- SPINNER -->
     <span class="spinner-grow spinner-grow-sm text-warning"></span>
     <span class="spinner-border spinner-border-sm text-warning"></span>
     <span class="spinner-border text-warning"></span>
-    
+
 
     <!-- NAVBAR                                        sticky-top fixed-top -->
     <div class="container">
@@ -386,7 +387,7 @@
     </div>
     <br>
     <hr><br>
-    
+
 
 
     <!-- ACCORDION                  
@@ -419,15 +420,204 @@
             </div>
         </div>
     </div>
-
-<!-- MODALS -->
-
-
+    <br>
+    <hr><br>
 
 
 
 
 
+    <!-- MODALS -->
+    <div class="container">
+        <button type="button" class="btn btn-danger bg-gradient shadow-lg" data-bs-toggle="modal" data-bs-target="#mdl">
+            MODAL BUTTON
+        </button>
+        <div class="modal" data-bs-backdrop="static" id="mdl">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Title</h4>
+                        <!-- BURAYA NAV LİSTE VS HERŞEY GELİR -->
+                    </div>
+                    <div class="modal-body">
+                        <img class="w-100" src="./kuran.jpg" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark" type="button" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr><br>
+
+
+
+    <!-- CAROUSEL -->
+    <div class="container">
+        <div class="carousel slide w-50" data-bs-ride="carousel" id="sld1">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="30000">
+                    <img class="d-block h-50 w-100" src="./doga.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h5>Doğa</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block h-50 w-100" src="./kuran.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h5>Ağaç</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#sld1">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#sld1">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#sld1" data-bs-slide-to="0"></button>
+                <button type="button" class="active" data-bs-target="#sld1" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <hr><br>
+
+
+
+
+<!-- TOOLTİPS -->
+<img src="./agac.jpg" alt="" class="w-25" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="Ne <em> güzel </em> ağaç...">
+<br><hr><br>
+
+
+
+<!-- POPOVERS      data-bs-trigger="hover" hoverda açılır data-bs-trigger="focus" diğerine bastığında kapanır tabindex0 vermek lazım-->
+<img data-bs-trigger="hover" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./agac.jpg" alt="" class="inline-block w-25">
+<img data-bs-trigger="hover" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./agac.jpg" alt="" class="inline-block w-25">
+<img data-bs-trigger="hover" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./agac.jpg" alt="" class="inline-block w-25">
+<br><hr><br>
+<img data-bs-trigger="focus" tabindex="0" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./doga.jpg" alt="" class="inline-block w-25">
+<img data-bs-trigger="focus" tabindex="0" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./doga.jpg" alt="" class="inline-block w-25">
+<img data-bs-trigger="focus" tabindex="0" data-bs-toggle="popover" title="POPOVER BAŞLIK" data-bs-content="loer ipsum dolor" src="./doga.jpg" alt="" class="inline-block w-25">
+<br><hr><br>
+
+
+<!-- SCROLLSPY -->
+<!-- href'e # adres verilir
+tıklanrığında # adresine iner
+head içine <style>  html{scroll-behavior: smooth;}  </style> yazılır -->
+
+<nav class="nav">
+    <div class="navbar-nav fixed-top">
+        <ul>
+            <li class="navbar-item"><a href="#spy1">spy 1</a></li>
+            <li class="navbar-item"><a href="#spy2">spy 2</a></li>
+            <li class="navbar-item"><a href="#spy3">spy 3</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div id="spy1" class="bg-warning" style="padding: 50px;">
+        <p>lorem50</p>
+    </div>
+    <div id="spy2" class="bg-info" style="padding: 50px;">
+        <p>lorem50</p>
+    </div>
+    <div id="spy3" class="bg-dark" style="padding: 50px;">
+        <p>lorem50</p>
+    </div>
+</div><br><hr><br>
+
+
+
+
+
+<!-- GRİD -->
+<div class="container my-1">
+
+    <div class="row my-1">
+        <div class="col border bg-warning">Column</div>
+    </div>
+
+    <div class="row my-1">
+        <div class="col border bg-warning">Column</div>
+    </div>
+
+    <div class="row my-1">
+        <div class="col-lg-4 border bg-info">Column</div>
+        <div class="col-lg-4 border bg-info">Column</div>
+        <div class="col-lg-4 border bg-info">Column</div>
+    </div>
+
+    <div class="row my-1">
+        <div class="col-2 border bg-warning">Column</div>
+        <div class="col border bg-warning">Column</div>
+        <div class="col border bg-warning">Column</div>
+    </div>
+
+    <div class="row my-1 row-cols-3">
+        <div class="col border bg-warning">Column</div>
+        <div class="col border bg-warning">Column</div>
+        <div class="col border bg-warning">Column</div>
+        <div class="col border bg-warning">Column</div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card bg-success">
+                <img class="car-img-top"
+                    src="https://images.unsplash.com/photo-1612931293183-42f9e260f35f?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                    alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
 
@@ -449,44 +639,34 @@
 
 
 
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
 
-
-
-
-
-
-
-
-
-
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        })
-    </script>
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
 </body>
 
 </html>
