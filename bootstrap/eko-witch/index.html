@@ -256,57 +256,158 @@
     </div>
 
     <!-- -----------------------------------------VIDEO---------------------------------------------- -->
-
-    <div id="video">
+    <div class="" id="video">
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col mt-5">
-                        <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="mt-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="gray" class="bi bi-play-btn-fill" viewBox="0 0 16 16">
-                                <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                              </svg> 
+                        <a href="" data-bs-target="#video-modal" data-bs-toggle="modal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="gray"
+                                class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z" />
+                            </svg>
+                            <h3 class="text-secondary">Video İçerik</h3>
                         </a>
-                        <h3 class="text-secondary">Watch Us</h3>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
-
-
-  
-    <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-secondary" id="exampleModalLabel">Hakan Academy</h5>
-          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DHkzfn-Ra7k"
-                  allowfullscreen></iframe>
-              </div>
-
-
-        </div>
-        <div class="modal-footer justify-content-center flex-column flex-md-row">
-            <span class="mr-4 text-secondary">Spread the word!</span>
-        </div>
-
-      </div>
     </div>
-  </div>
 
 
 
+    <!-- --------------------MODAL------------------------------- -->
+
+    <div class="modal" id="video-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Ahşap İşleme Üzerine...</h3>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="w-100 h-100 embed-responsive-item"
+                            src="https://www.youtube.com/embed/c4begcPe8HY" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="justify-content-center modal-footer">
+                    <h6>Eko Witch's Things</h6>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+
+    <!-- ------------------------------------PHOTO GALLERY MODAL------------------------------- -->
+
+    <h3 class="text-center text-light pb-2 mt-3">Kullandığım Materyaller</h3>
+    <div class="container">
+        <div class="row">
+            <div class="materyal col-md-4"><a href="" data-bs-toggle="modal" data-bs-target="#mat1"><img
+                        class="w-100 h-75 rounded border border-secondary rounded-3" src="./photo/ahsap.jpg"
+                        alt="ahsap"></a></div>
+            <div class="materyal col-md-4"><a href="" data-bs-toggle="modal" data-bs-target="#mat2"><img
+                        class="w-100 h-75 rounded border border-secondary rounded-3" src="./photo/metal.jpg"
+                        alt="metal"></a></div>
+            <div class="materyal col-md-4"><a href="" data-bs-toggle="modal" data-bs-target="#mat3"><img
+                        class="w-100 h-75 rounded border border-secondary rounded-3" src="./photo/kumas.jpg"
+                        alt="kumas"></a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal" id="mat1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="align-self-center modal-header">
+                        <div class="row">
+                            <h4 class="text-center">Ahşap Çeşitleri</h4>
+                        </div>
+                    </div>
+                    <div class="align-center modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img class="w-100" src="./photo/ahsap.jpg" alt="ahsap">
+                            </div>
+                            <div class="col">
+                                <p>Ahşap türevleriyle çalışmak Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                    nemo fugiat sed deleniti eum. Porro dolor esse commodi repellat ad.</p>
+                            <button type="button" class="btn btn-dark">Daha fazla oku...</button>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">İletişime Geç</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="mat2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="align-self-center modal-header">
+                        <div class="row">
+                            <h4 class="text-center">Metal Malzemeler</h4>
+                        </div>
+                    </div>
+                    <div class="align-center modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img class="w-100" src="./photo/metal.jpg" alt="ahsap">
+                            </div>
+                            <div class="col">
+                                <p>Metal türevleriyle çalışmak Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                    nemo fugiat sed deleniti eum. Porro dolor esse commodi repellat ad.</p>
+                            <button type="button" class="btn btn-dark">Daha fazla oku...</button>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">İletişime Geç</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal" id="mat3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="align-self-center modal-header">
+                        <div class="row">
+                            <h4 class="text-center">Kumaş Çeşitleri</h4>
+                        </div>
+                    </div>
+                    <div class="align-center modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <img class="w-100" src="./photo/kumas.jpg" alt="ahsap">
+                            </div>
+                            <div class="col">
+                                <p>Kumaş çeşitleriyle çalışmak Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                    nemo fugiat sed deleniti eum. Porro dolor esse commodi repellat ad.</p>
+                            <button type="button" class="btn btn-dark">Daha fazla oku...</button>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">İletişime Geç</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
