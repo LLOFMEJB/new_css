@@ -9,6 +9,8 @@
     background-repeat: no-repeat;
     text-align: center;
     color: #fff;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
 }
 .overlay{
     position: absolute;
@@ -18,6 +20,19 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* .carousel-row{
+    position: relative;
+
+    background-image: url(./photo/home-content2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+} */
+
 #video{
     position: relative;
     min-height: 300px;
@@ -68,7 +83,7 @@
 
 .navbar-brand, .navbar-toggler, .nav-link{
     font-family: 'Lobster', cursive;
-    color:rgb(41, 33, 25) !important;
+    color:rgb(255, 123, 0) !important;
     font-size: x-large;
     
 }
@@ -78,8 +93,14 @@
 }
 
 nav{
-    background-image: url(./photo/yaprak.jpg);
-    background-size:cover
+    background-image: url(./photo/nav-back2.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.carousel-row{
+    /* background-image: url(./photo/nav-back2.jpg);
+    background-size:cover;
+    background-attachment: fixed; */
 }
 
 .carousel-caption{
